@@ -63,7 +63,7 @@ const MainView = () => {
                   ]
                 },
                 {
-                  title: 'GitHub Dev Finder App',
+                  title: 'GitHub Devfinder App',
                   dependency: ['JavaScript', 'Tailwind', 'React',],
                   projectLink: "https://isanamoa.github.io/devfinder_app/",
                   projectCode: "https://github.com/isanamoa/devfinder_app",

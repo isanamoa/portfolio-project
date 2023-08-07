@@ -1,4 +1,4 @@
-import { Box, Typography,  } from "@mui/material";
+import { Box, Divider, Typography,  } from "@mui/material";
 
 const ContactUs = () => {
   return (
@@ -15,8 +15,8 @@ const ContactUs = () => {
       <Typography variant="body2" 
         sx={{ fontSize:'1.125rem', textAlign:{xs:'center', sm:'left'} }}
       >
-        I would love to hear about your project and how I 
-        could help. Please fill in the form, and I’ll get back 
+        I would love to hear about your project and how I <br className="breakChange"/>
+        could help. Please fill in the form, and I’ll get back <br className="breakChange"/>
         to you as soon as possible.
       </Typography>
     </Box>

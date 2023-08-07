@@ -1,27 +1,33 @@
-import { Box } from "@mui/material";
 import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
-import Link from "next/link";
+import { Box, Button } from "@mui/material";
 import { SiFrontendmentor } from 'react-icons/si'
+import SocialButton from "./SocialButton";
+
 const Socials = () => {
   
   return (
-    <Box sx={{ display:'flex', color:'#FFFFFF',
-          flexDirection:'row-reverse',
-          alignItems:'center', columnGap:2, fontSize:'1.2rem'
+    <Box sx={{ display:'flex', 
+          flexDirection:'row-reverse', 
+          alignItems:'center', columnGap:1, fontSize:'1.2rem'
         }}
     >
-        <Link href={"https://twitter.com/Yannanahio?t=HmwNNt5qqgXXvX_ajhDbiw&s=08"} target="_blank">
-          <Twitter size='small' />
-        </Link>
-        <Link href={"https://www.linkedin.com/in/isaac-ansah-amoah-535759b0"} target="_blank">
-          <LinkedIn size='small' />
-        </Link>
-        <Link href={"https://www.frontendmentor.io/"} target="_blank">
-          <SiFrontendmentor  />
-        </Link>
-        <Link href={"https://github.com/isanamoa"} target="_blank">
-          <GitHub size='small' />
-        </Link>
+      <SocialButton 
+        passRef={"https://twitter.com/Yannanahio?t=HmwNNt5qqgXXvX_ajhDbiw&s=08"} 
+        icon={<Twitter size="small" />} 
+      />
+      <SocialButton 
+        passRef={"https://www.linkedin.com/in/isaac-ansah-amoah-535759b0"} 
+        icon={<LinkedIn size="small" />} 
+      />
+      <SocialButton 
+        passRef={"https://www.frontendmentor.io/"} 
+        icon={<SiFrontendmentor />} 
+      />
+      <SocialButton 
+        passRef={"https://github.com/isanamoa"} 
+        icon={<GitHub size="small" sx={{m:0}} />} 
+      />
+    
     </Box>
   )
 }

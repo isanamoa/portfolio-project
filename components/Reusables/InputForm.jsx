@@ -26,7 +26,7 @@ const InputForm = () => {
             type="text"
             variant="standard"
             sx={{ width: 1, color:'gray', borderBottom:2, 
-            borderBottomColor:'teal' }}       
+            borderBottomColor:'#4EE1A0' }}       
             required
           />
         
@@ -40,7 +40,7 @@ const InputForm = () => {
             type="email"
             variant="standard"
             sx={{ width: 1, color:'gray', borderBottom:2, 
-            borderBottomColor:'teal' }}             
+            borderBottomColor:'#4EE1A0' }}             
             required
           />
 
@@ -55,7 +55,7 @@ const InputForm = () => {
             maxRows={4}
             variant="standard"
             sx={{ width: 1, color:'gray', borderBottom:2, 
-            borderBottomColor:'teal' }}             
+            borderBottomColor:'#4EE1A0' }}             
             required
           />
         </Box>
@@ -63,8 +63,12 @@ const InputForm = () => {
         <Box sx={{ display:'flex', justifyContent:'end', alignItems:'end' }} >
 
             <Button type="submit" 
-                sx={{ color:'gray', borderBottom:2, 
-                borderBottomColor:'teal', borderRadius:0 
+                sx={{ color:'#FFF', '&:hover': {
+                  color:'#4EE1A0',
+                  bgcolor:'transparent'
+                },
+                borderBottom:1, 
+                borderBottomColor:'#4EE1A0', borderRadius:0 
                 }}
             >
               Send Message

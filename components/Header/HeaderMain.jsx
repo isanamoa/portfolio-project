@@ -1,4 +1,4 @@
-import {  Avatar, Box,  Button, Typography } from "@mui/material";
+import { Box,  Button, Typography } from "@mui/material";
 import Typist from "react-typist-component";
 
 const HeaderMain = () => {
@@ -34,7 +34,7 @@ const HeaderMain = () => {
                     flexDirection:{xs:'column', sm:'row'},
                     justifyContent:{xs:'center', sm:'flex-start'},
                     alignItems:'center',
-                    mt: {sm:15, md:20, lg:30} 
+                    mt: {sm:15, md:30, lg:30} 
                 }} 
             >
                 <Typist 
@@ -77,7 +77,8 @@ const HeaderMain = () => {
                 sx={{ position: 'relative', 
                 border: 'none', 
                 width: {xs: '10.888rem', sm:1}, 
-                height: { xs:'15.125rem', sm: '30.375rem', md: '38.625rem'} }}
+                height: { xs:'15.125rem', sm: '30.375rem', md: '38.625rem'},
+                filter: "grayscale(100%)" }}
             />
             {/**
              *  className="sm:w-full"
