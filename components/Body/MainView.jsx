@@ -4,28 +4,30 @@ import SkillSet from "../Reusables/SkillSet";
 
 const MainView = () => {
   return (
-    <Box sx={{ width: { lg:'75rem' }, mx:'auto', mb:7 }} >
+    <Box sx={{ width: { lg:'70rem' }, mx:'auto', mb:7, overflow:{xs:'hidden', sm:'visible'}, }} >
 
       <SkillSet />
 
       <Box sx={{ py:5, px:{ xs:5, sm:2, md:0, } }} >
+
         <Box sx={{ display:'flex', justifyContent:'space-between', alignItems:'center' }} >
           <Typography variant="h4" 
-            sx={{ py:1, fontSize:'1.1rem', 
-              fontWeight:600, textDecoration:'underline'
+            sx={{ py:1, fontSize:'2.5rem', 
+              fontWeight:600, 
             }}
           >
-            PROJECTS
+            Projects
           </Typography>
-          <Button sx={{ display:{xs:'none', sm:'block'},
+          <Button sx={{ 
               color:'#FFFFFF',
-              borderBottom:2, borderBottomColor:'teal', 
+              borderBottom:2, borderBottomColor:'#4EE1A0', 
               borderRadius:0 }}
             >
               CONTACT ME
           </Button>
         </Box>
-        {/** grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 */}
+
+
         <Box sx={{ display:'flex', flexDirection:{xs:'column', sm:'row'}, 
           flexWrap:'wrap', justifyContent:{xs:'space-around', sm:'space-between'}, 
           alignItems:'center', gap:3 }}
@@ -86,9 +88,6 @@ const MainView = () => {
                 <PreviewCard key={index} projectData={item}/>
               ))
             }
-
-            
-        
         </Box>
       </Box>
     </Box>

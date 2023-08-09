@@ -16,13 +16,22 @@ const darkTheme = createTheme({
       'Space Grotesk',
       ],
   },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 768,
+      md: 992,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
 });
 
 const Home = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <Box sx={{ minHeight: '100vh'}}>
+      <Box sx={{ minHeight: '100vh', overflow:'hidden'}}>
         <Header />
         <MainView />
         <Footer />

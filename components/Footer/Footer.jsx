@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <Box sx={{ bgcolor:"#242424", py:2 }} >
 
-      <Box sx={{ width: { lg:'75rem' }, mx:'auto', py:2,
+      <Box sx={{ width: { lg:'70rem' }, mx:'auto', py:2,
           display:'flex', flexDirection:{xs:'column', md:'row'},
           justifyContent:'center', alignItems:"center",
           borderBottom:2, borderBottomColor:'white', 
@@ -26,7 +26,7 @@ const Footer = () => {
         <InputForm />
       </Box>
 
-      <Box sx={{ width: { lg:'75rem' }, mx:'auto', py:2, 
+      <Box sx={{ width: { lg:'70rem' }, mx:'auto', py:2, 
           px:{xs:2, sm:0},
           display:'flex', flexDirection:{xs:'column', sm:'row'},
           justifyContent:{xs:'center', sm:'space-between'}, alignItems:"center",

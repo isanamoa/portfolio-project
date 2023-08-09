@@ -4,12 +4,30 @@
 @import '@fontsource/space-grotesk/700.css';
 
 
+.breakChange {
+    display: block;
+}
 
-@media screen and (min-width: 600px) {
+.breakChangesm {
+    display: none;
+}
+
+.breakChangelg {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
     .displayBox:hover .viewLink {
         opacity: 1;
     }
     .breakChange {
+        display: none;
+    }
+
+    .breakChangesm {
+        display: block;
+    }
+    .breakChangelg {
         display: none;
     }
       
@@ -19,6 +37,12 @@
         opacity: 1;
     }
     .breakChange {
+        display: block;
+    }
+    .breakChangesm {
+        display: none;
+    }
+    .breakChangelg{
         display: block;
     }
       

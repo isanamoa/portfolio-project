@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material"
 const SkillSet = () => {
   return (
 
-    <Box sx={{ py:3, px: { xs:5, sm:2, md:0 },
+    <Box sx={{ py:2, px: { xs:5, sm:2, md:0 },
             borderTop:2, borderBottom:{ xs:2, sm:0 },
             borderColor: '#FFFFFF' 
         }} 
@@ -20,12 +20,7 @@ const SkillSet = () => {
                         alignItems:{xs:'center', sm:'flex-start'}, 
                         columnGap:{sm:13, md:15, lg:20}, rowGap:4, py:1
                     }}
-                >
-                    {/**
-                     * className="flex flex-col sm:grid sm:grid-cols-2 
-                    md:grid-cols-3 justify-center items-center sm:items-start sm:justify-between gap-x-5 gap-y-10 py-1"
-                     */}
-                    
+                >                    
                     {
                         {
                             frontend: [
@@ -88,6 +83,69 @@ const SkillSet = () => {
                 </Box>
             </Box>
         </Box>
+
+        <Box sx={{position:'relative', 
+            transform:'rotate(180deg)',  
+            bottom:{xs:-88, sm:-15, lg:45},
+            right:{xs:'-6.5rem', lg:'-30.5rem'},
+        }} >
+          <Box
+            component="img" 
+            alt="oval" 
+            src="/assets/specIcons/Oval.png" 
+            sx={{ position: 'relative', 
+            width:{xs:'15rem', lg: '30rem'},            
+            height:'5rem',
+            left:0, top:50,            
+            }}
+          />    
+          <Box
+            component="img" 
+            alt="oval" 
+            src="/assets/specIcons/Oval.png" 
+            sx={{ position: 'absolute', 
+            width:{xs:'15rem', lg: '30rem'},            
+            height:'5rem',
+            left:0, top:38,            
+            zIndex:1          
+            }}
+          /> 
+          <Box
+            component="img" 
+            alt="oval" 
+            src="/assets/specIcons/Oval.png" 
+            sx={{ position: 'absolute', 
+            width:{xs:'15rem', lg: '30rem'},            
+            height:'5rem',
+            left:0, top:26,            
+            zIndex:1          
+            }}
+          /> 
+          <Box
+            component="img" 
+            alt="oval" 
+            src="/assets/specIcons/Oval.png" 
+            sx={{ position: 'absolute', 
+            width:{xs:'15rem', lg: '30rem'},            
+            height:'5rem',
+            left:0, top:14,            
+            zIndex:1          
+            }}
+          /> 
+          <Box
+            component="img" 
+            alt="oval" 
+            src="/assets/specIcons/Oval.png" 
+            sx={{ position: 'absolute', 
+            height:'5rem',
+            width:{xs:'15rem', lg: '30rem'},
+            left:0, top:2,            
+            zIndex:1          
+            }}
+          /> 
+          
+        </Box>
+
     </Box>
   )
 }

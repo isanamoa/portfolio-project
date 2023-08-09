@@ -9,8 +9,8 @@ const InputForm = () => {
   return (
     <Box sx={{ width:{ xs:1, sm:1/2, md:2/5 }, 
           display:'flex', flexDirection:'column',
-          justifyContent:{xs:'space-around', sm:'center'}, 
-          gap:2, px:{xs:10, sm:0}
+          justifyContent:{xs:'flex-start', sm:'center'}, 
+          gap:2, px:{xs:3, sm:0}
         }}
     >
       {/**
